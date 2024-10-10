@@ -5,23 +5,29 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E15580"
     tools:context=".ui.registro.RegistroActivity">
+
     <Button
         android:id="@+id/btGuardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="28dp"
         android:text="GUARDAR"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivFotoPerfil" />
+        app:layout_constraintTop_toBottomOf="@+id/ivFotoPerfil"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/etDocumento"
         android:layout_width="match_parent"
         android:layout_height="52dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="44dp"
+        android:layout_marginEnd="30dp"
         android:ems="10"
         android:hint="Documento"
         android:inputType="number"
@@ -33,7 +39,9 @@
         android:id="@+id/etApellido"
         android:layout_width="match_parent"
         android:layout_height="52dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
         android:ems="10"
         android:hint="Apellido"
         android:inputType="text"
@@ -46,7 +54,9 @@
         android:id="@+id/etNombre"
         android:layout_width="match_parent"
         android:layout_height="52dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
         android:ems="10"
         android:hint="Nombre"
         android:inputType="text"
@@ -59,7 +69,9 @@
         android:id="@+id/etEmailRegistro"
         android:layout_width="match_parent"
         android:layout_height="52dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -71,19 +83,22 @@
         android:id="@+id/etPasswordRegistro"
         android:layout_width="match_parent"
         android:layout_height="52dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@+id/etEmailRegistro"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailRegistro" />
 
     <ImageView
         android:id="@+id/ivFotoPerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPasswordRegistro"
         tools:srcCompat="@tools:sample/avatars" />
@@ -92,10 +107,12 @@
         android:id="@+id/btTomarFoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="176dp"
         android:text="TOMAR FOTO"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ivFotoPerfil"
-        app:layout_constraintTop_toBottomOf="@+id/etPasswordRegistro" />
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordRegistro"
+        app:layout_constraintVertical_bias="0.013" />
 </androidx.constraintlayout.widget.ConstraintLayout>
